@@ -1,0 +1,33 @@
+.textContainer {
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.leftText {
+  font-size: medium;
+  text-align: left;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.rightText {
+  font-size: medium;
+  text-align: right;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .leftText,
+  .rightText {
+    width: 100%;
+    text-align: center;
+  }
+  .textContainer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}

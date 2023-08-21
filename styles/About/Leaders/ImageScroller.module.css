@@ -1,0 +1,283 @@
+.container {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  
+  .scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2px;
+  }
+  
+  .photoContainer {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 400px;
+    margin-right: 35px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 2; */
+    
+  }
+  .photoContainer:hover {
+    z-index: 3;
+    transform-origin: center top;
+    height: 500px;
+  }
+
+  .photo {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* position: relative; */
+  }
+  .opacityOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top, rgba(38,55,112, 0.9) 0%, rgba(255, 255, 255, 0) 30%);
+  }
+  
+  /* ---------------------Title styling----------------------- */
+  .title {
+    position: absolute;
+    top: 85%;
+    left: 23%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .title2 {
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .title3 {
+    position: absolute;
+    top: 85%;
+    left: 31%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .activeTitle1 {
+    top: 50%;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+  font-size:medium ;
+  color: white;
+  }
+
+  .activeTitle2 {
+    top: 50%;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+  font-size:medium ;
+  color: white;
+  }
+  .activeTitle3 {
+    top: 50%;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+  font-size:medium ;
+  color: white;
+  }
+  .activeTitle4 {
+    top: 50%;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+  font-size:medium ;
+  color: white;
+  }
+
+  /* ---------------------------Job Styling-------------------------- */
+  .job{
+    position: absolute;
+    top: 92%;
+    left: 20%;
+    transform: translate(-50%);
+    text-align: flex-start;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .job2{
+    position: absolute;
+    top: 92%;
+    left: 15%;
+    transform: translate(-50%);
+    text-align: flex-start;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .job3{
+    position: absolute;
+    top: 92%;
+    left: 23%;
+    transform: translate(-50%);
+    text-align: flex-start;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .job4{
+    position: absolute;
+    top: 92%;
+    left: 26%;
+    transform: translate(-50%);
+    text-align: flex-start;
+    z-index: 3;
+    transition: font-size 0.3s, color 0.3s ;
+  }
+  .activeJob1 {
+    top:56%;
+    width: 100%;
+    left: 58%;
+    line-height: 25px;
+    padding-right:50px;
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  .activeJob2 {
+    top:56%;
+    width: 100%;
+    left: 58%;
+    line-height: 25px;
+    padding-right:50px;
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  .activeJob3 {
+    top:56%;
+    width: 100%;
+    left: 58%;
+    line-height: 25px;
+    padding-right:50px;
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  .activeJob4 {
+    top:56%;
+    width: 100%;
+    left: 58%;
+    line-height: 25px;
+    padding-right:50px;
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  
+  /* -----------------------Discription------------------ */
+  .description {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    line-height: 20px;
+    transform: translate(-50%);
+    margin-left: 0px;
+    text-align: flex-start;
+    z-index: 3;
+    color: transparent; /* Set the text color to transparent */
+    transition: top 0.2s;
+    transition: font-size 0.3s, color 0.3s;
+    font-family: "Neue Helvetica", sans-serif;
+  }
+  
+  .activeDiscription1 {
+    top: 66%;
+    width: 100%;
+    left: 57%;
+    margin-right:0;
+    padding-right:34px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .activeDiscription2 {
+    top: 66%;
+    width: 100%;
+    left: 57%;
+    margin-right:0;
+    padding-right:34px;
+    color: white;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  .activeDiscription3 {
+    top: 66%;
+    width: 100%;
+    left: 57%;
+    margin-right:0;
+    padding-right:34px;
+    color: white;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  
+  .activeDiscription4 {
+    top: 66%;
+    width: 100%;
+    left: 57%;
+    margin-right:0;
+    padding-right:34px;
+    color: white;
+    font-weight: bold;
+    font-family: "Neue Helvetica", sans-serif;
+    font-size: 12px;
+  }
+  
+   /* -------------------------------------------Icons---------------- */
+  .icon {
+    position: absolute;
+    bottom: 10px;
+    margin-right: 0px;
+    left: 20px;
+    color: grey;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 22px;
+  }
+  .activeIcon{
+    top: 56%;
+  
+  }
+   
+  /* Hide the scrollbar for Webkit browsers */
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide the scrollbar for Firefox */
+  .container {
+    scrollbar-width: none;
+  }
+  
+  .active {
+    background-image: linear-gradient(to top, rgba(38,55,112, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  

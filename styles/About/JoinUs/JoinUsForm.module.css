@@ -1,0 +1,74 @@
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px); /* Apply blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popupContent {
+  padding: 40px;
+  width: 50%;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.formContainer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer input,
+.formContainer textarea {
+  font-family: "Neue Helvetica", sans-serif;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+  outline: none;
+  border-color: rgb(65, 65, 65); 
+  box-shadow: 0 0 5px rgba(84, 90, 97, 0.5);
+}
+
+.formContainer textarea {
+  height: 130px;
+  margin-bottom: 30px;
+}
+.formContainer .formRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formContainer .formRow .formField {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.submitButton {
+  font-family: "Neue Helvetica", sans-serif;
+  width: 150px;
+  padding: 15px 10px;
+  background-color: transparent;
+  color: #263770;
+  font-weight: bold;
+  border: 1px solid #263770;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #263770; 
+  color:white
+}

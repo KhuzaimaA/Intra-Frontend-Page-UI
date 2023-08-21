@@ -1,0 +1,138 @@
+.textButtonContainer {
+  flex: 1;
+  align-items: flex-start;
+  height: 200px;
+  width: 100px;
+  margin-top: 40px;
+  /* margin-bottom:100px */
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: #263770;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+.joinUsContainer {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 800px;
+  margin-bottom: 180px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  flex-direction: column;
+  padding: 40px;
+  /* margin-right:5px */
+}
+
+.column2 {
+  flex-basis: 70%;
+  /* padding: 45px; */
+  padding-left:200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.imageContainer1::before,
+.imageContainer2::before,
+.imageContainer3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  );
+}
+
+.imageContainer1,
+.imageContainer2,
+.imageContainer3{
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: contain;
+  background-position: center;
+}
+
+.imageText {
+  color: rgb(215, 213, 213);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.imageContainer1 { background-image: url("/images/joinPic1.jpg");}
+.imageContainer2 { background-image: url("/images/joinPic2.png");}
+.imageContainer3 { background-image: url("/images/joinPic3.jpg");}
+
+
+
+/* ----------------------------------------Media Query------------------------------------ */
+
+@media (max-width: 768px) {
+  .joinUsContainer {
+    flex-direction: column;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column1,
+  .column2 {
+    flex-basis: 100%;
+    padding-top: 20px;
+  }
+
+  
+  .column1 {
+    /* text-align: center; */
+    height: 200px;
+  }
+
+  .imageContainer1,
+  .imageContainer2,
+  .imageContainer3 {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .button {
+    align-self: center;
+    justify-self: center;
+  }
+
+  /* .textButtonContainer {
+    align-items: center;
+   
+  } */
+}

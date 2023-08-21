@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  margin-top: 50px;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2px;
+}
+
+.photoContainer {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 400px;
+  margin-right: 35px;
+  background-color: white;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  position: relative;
+}
+.opacityOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as desired */
+  z-index: 2;
+}
+
+.title {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  transform: translate(-50%);
+  text-align: center;
+  z-index: 3;
+  transition: font-size 0.3s, color 0.3s ;
+}
+.title2 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  transform: translate(-50%);
+  text-align: center;
+  z-index: 3;
+  transition: font-size 0.3s, color 0.3s ;
+}
+.activeTitle1 {
+  top: 43%;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Neue Helvetica", sans-serif;
+  color: #15ae66;
+}
+.activeTitle2 {
+  top: 43%;
+  left: 25%;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Neue Helvetica", sans-serif;
+  color: #15ae66;
+}
+.activeTitle3 {
+  top: 43%;
+  left: 20%;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Neue Helvetica", sans-serif;
+  color: #15ae66;
+}
+.activeTitle4 {
+  top: 43%;
+  left: 23%;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Neue Helvetica", sans-serif;
+  color: #15ae66;
+}
+
+
+.icon {
+  position: absolute;
+  bottom: 16px;
+  margin-right: 0px;
+  left: 16px;
+  color: grey;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  font-size: 24px;
+}
+
+.description {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  line-height: 23px;
+  transform: translate(-50%);
+  margin-left: 0px;
+  text-align: flex-start;
+  z-index: 3;
+  color: transparent; /* Set the text color to transparent */
+  transition: top 0.2s;
+  transition: font-size 0.3s, color 0.3s;
+}
+
+.activeDiscription1 {
+  top: 55%;
+  width: 100%;
+  margin-right:0;
+  padding-right:25px;
+  color: white;
+  font-weight: bold;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 13px;
+}
+.activeDiscription2 {
+  top: 53%;
+  width: 100%;
+  left: 58%;
+  padding-right:30px;
+  color: white;
+  font-weight: bold;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 13px;
+}
+.activeDiscription3 {
+  top: 55%;
+  width: 100%;
+  left: 58%;
+  line-height: 25px;
+  padding-right:38px;
+  color: white;
+  font-weight: bold;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 13px;
+}
+
+.activeDiscription4 {
+  top: 55%;
+  width: 100%;
+  left: 58%;
+  line-height: 25px;
+  padding-right:50px;
+  color: white;
+  font-weight: bold;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 13px;
+}
+
+/* Hide the scrollbar for Webkit browsers */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the scrollbar for Firefox */
+.container {
+  scrollbar-width: none;
+}
+
+.active {
+  background-color: rgba(38,55,112, 0.9);
+}
